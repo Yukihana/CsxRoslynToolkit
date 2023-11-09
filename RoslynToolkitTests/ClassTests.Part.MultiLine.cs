@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-namespace RoslynToolkitTests;
+﻿namespace RoslynToolkitTests;
 
 public partial class ClassTests
 {

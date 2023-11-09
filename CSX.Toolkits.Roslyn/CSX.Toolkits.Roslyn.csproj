@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <LangVersion>Latest</LangVersion>
     <Version>0.$([System.DateTime]::UtcNow.ToString("yyyy.MMdd.Hmm"))</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 
     <!--Analyzer-->
     <EnforceExtendedAnalyzerRules>enable</EnforceExtendedAnalyzerRules>
@@ -28,7 +29,7 @@
   </ItemGroup>
 
   <!--Nuget Push-->
-  <Target Name="PackAndPushLocalNuGet" AfterTargets="Pack" >
+  <Target Name="PackAndPushLocalNuGet" AfterTargets="Pack">
     <Exec Command="dotnet nuget push $(OutputPath)..\$(PackageId).$(PackageVersion).nupkg -s LocalNugetFeed" />
   </Target>
 

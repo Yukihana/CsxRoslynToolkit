@@ -1,6 +1,4 @@
-﻿using CSX.Toolkits.Roslyn.Builders.SourceBuilderExtensions;
-
-namespace RoslynToolkitTests;
+﻿namespace RoslynToolkitTests;
 
 public partial class ClassTests
 {

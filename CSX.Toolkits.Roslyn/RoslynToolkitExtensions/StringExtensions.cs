@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
-namespace CSX.Toolkits.Roslyn.Helpers;
+namespace CSX.Toolkits.Roslyn.RoslynToolkitExtensions;
 
 public static partial class StringExtensions
 {

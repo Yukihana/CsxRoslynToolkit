@@ -6,7 +6,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Runtime.CompilerServices;
 
-namespace CSX.Toolkits.Roslyn.Helpers;
+namespace CSX.Toolkits.Roslyn.RoslynToolkitExtensions;
 
 // CSX: Copied from the source because the original class is set to 'internal'
 
@@ -111,7 +111,7 @@ public readonly struct EquatableArray<T> : IEquatable<EquatableArray<T>>, IEnume
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public ImmutableArray<T> AsImmutableArray()
     {
-        return Unsafe.As<T[]?, ImmutableArray<T>>(ref Unsafe.AsRef(in this.array));
+        return Unsafe.As<T[]?, ImmutableArray<T>>(ref Unsafe.AsRef(in array));
     }
 
     /// <summary>

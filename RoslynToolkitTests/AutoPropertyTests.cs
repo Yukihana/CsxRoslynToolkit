@@ -1,5 +1,3 @@
-using CSX.Toolkits.Roslyn.Builders.SourceBuilderExtensions;
-
 namespace RoslynToolkitTests;
 
 public class AutoPropertyTests

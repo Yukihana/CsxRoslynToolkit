@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace CSX.Toolkits.Roslyn.Builders;
+﻿namespace CSX.Toolkits.Roslyn.Builders;
 
 public static partial class LineExtensions
 {

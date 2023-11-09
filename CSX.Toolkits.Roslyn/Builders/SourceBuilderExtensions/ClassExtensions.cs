@@ -1,4 +1,4 @@
-﻿using CSX.Toolkits.Roslyn.Helpers;
+﻿using CSX.Toolkits.Roslyn.RoslynToolkitExtensions;
 using System.Collections.Generic;
 using System.Linq;
 

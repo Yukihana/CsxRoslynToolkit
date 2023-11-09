@@ -1,4 +1,4 @@
-﻿using CSX.Toolkits.Roslyn.Helpers;
+﻿using CSX.Toolkits.Roslyn.RoslynToolkitExtensions;
 
 namespace CSX.Toolkits.Roslyn.Builders.SourceBuilderExtensions;
 
@@ -15,7 +15,7 @@ public static partial class AssignmentExtensions
     // Ctor Assignment (handles automatic capitalization)
 
     public static string WriteConstructorAssignment(this string source)
-        => WriteClassScopeAssignment(source, source.Capitalize());
+        => WriteClassScopeAssignment(source, NamingExtensions.GetPropertyNameFromParameter(source));
 
     public static SourceBuilder AddConstructorAssignment(this SourceBuilder builder, string source)
         => builder.AddLine(WriteConstructorAssignment(source));

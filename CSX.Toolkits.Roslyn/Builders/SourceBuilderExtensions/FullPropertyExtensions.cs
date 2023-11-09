@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSX.Toolkits.Roslyn.Builders.SourceBuilderExtensions;
+﻿namespace CSX.Toolkits.Roslyn.Builders.SourceBuilderExtensions;
 
 public static partial class FullPropertyExtensions
 {
